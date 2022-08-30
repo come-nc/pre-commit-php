@@ -14,7 +14,7 @@ See [Adding pre-commit plugins to your project](https://pre-commit.com/#adding-p
 
 ```yaml
 - repo: https://github.com/come-nc/pre-commit-php.git
-  rev: 1.4.0
+  rev: 1.5.0
   hooks:
   - id: php-lint
 ```
@@ -25,7 +25,7 @@ A bash script that runs `php -l` against stage files that are php. Assumes `php`
 
 ```yaml
 - repo: https://github.com/come-nc/pre-commit-php.git
-  rev: 1.4.0
+  rev: 1.5.0
   hooks:
   - id: php-lint-all
 ```
@@ -37,7 +37,7 @@ A systems hook that just runs `php -l` against stage files that have the `.php` 
 
 ```yaml
 - repo: https://github.com/come-nc/pre-commit-php.git
-  rev: 1.4.0
+  rev: 1.5.0
   hooks:
   - id: php-unit
 ```
@@ -53,7 +53,7 @@ Note in its current state, it will run the whole PHPUnit test as along as `.php`
 
 ```yaml
 - repo: https://github.com/come-nc/pre-commit-php.git
-  rev: 1.4.0
+  rev: 1.5.0
   hooks:
   - id: php-cs
     files: \.(php)$
@@ -70,7 +70,7 @@ The `args` property in your hook declaration can be used for pass any valid PHP 
 
 ```yaml
 - repo: https://github.com/come-nc/pre-commit-php.git
-  rev: 1.4.0
+  rev: 1.5.0
   hooks:
   - id: php-cs
     files: \.(php)$
@@ -86,7 +86,7 @@ If you have multiple standards or a comma in your `args` property, escape the co
 
 ```yaml
 - repo: https://github.com/come-nc/pre-commit-php.git
-  rev: 1.4.0
+  rev: 1.5.0
   hooks:
   - id: php-cs
     files: \.(php)$
@@ -98,7 +98,7 @@ To install PHP Codesniffer (phpcs & phpcbf), follow the [recommended steps here]
 ## php-cs-fixer
 ```yaml
 -- repo: https://github.com/come-nc/pre-commit-php.git
-   rev: 1.4.0
+   rev: 1.5.0
   hooks:
   - id: php-cs-fixer
     files: \.(php)$
@@ -116,7 +116,7 @@ Adds the [PHPStan](https://phpstan.org/) tool.
 
 ```yaml
 -- repo: https://github.com/come-nc/pre-commit-php.git
-   rev: 1.4.0
+   rev: 1.5.0
   hooks:
   - id: php-stan
     files: \.(php)$
